@@ -10,8 +10,8 @@ describe('App Launch', () => {
   });
 
   it('should have logo image', async () => {
-    expect(element(by.id('logo-image'))).toBeVisible();
-    expect(element(by.id('loading-indicator'))).toBeVisible();
+    await expect(element(by.id('logo-image'))).toBeVisible();
+    await expect(element(by.id('loading-indicator'))).toBeVisible();
   });
 
   it('should navigate to Onboarding Screen', async () => {
