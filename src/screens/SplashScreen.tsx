@@ -14,19 +14,9 @@ const SplashScreen: FC = () => {
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>
-        <Image
-          testID="logo-image"
-          source={logo}
-          style={[
-            {
-              width: '50%',
-              height: '30%',
-              resizeMode: 'contain',
-            },
-          ]}
-        />
+        <Image testID="logo-image" source={logo} style={[styles.image]} />
       </View>
-      <View style={{marginBottom: 40}}>
+      <View style={styles.view}>
         <ActivityIndicator size={'large'} testID="loading-indicator" />
       </View>
     </View>
@@ -43,6 +33,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  image: {
+    width: '50%',
+    height: '30%',
+    resizeMode: 'contain',
+  },
+  view: {marginBottom: 40},
 });
 
 export default SplashScreen;

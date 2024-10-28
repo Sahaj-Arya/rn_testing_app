@@ -120,7 +120,7 @@ const RegisterScreen: React.FC = () => {
         />
         <CustomButton
           title="Sign Up"
-          testID="register"
+          testID="Register"
           onPress={SignUpHandler}
         />
       </View>

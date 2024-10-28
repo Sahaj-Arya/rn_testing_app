@@ -17,8 +17,8 @@ describe('Register Process', () => {
   });
 
   it('should fill email and password name , lastname', async () => {
-    await expect(element(by.id('register'))).toBeVisible();
-    await element(by.id('register')).tap();
+    await expect(element(by.id('Register'))).toBeVisible();
+    await element(by.id('Register')).tap();
     await expect(element(by.text('Testing Complete'))).toBeVisible();
   });
 });
