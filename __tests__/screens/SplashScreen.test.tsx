@@ -26,7 +26,7 @@ describe('SplashScreen', () => {
 
     expect(prepareNavigation).toHaveBeenCalled();
   });
-
+ 
   it('should navigate to OnBoardingScreen after 3 seconds', async () => {
     render(<SplashScreen />);
 
